@@ -1,0 +1,50 @@
+# ============================================
+# BRAIN - Central Configuration Manifest
+# ============================================
+# This file is the "Brain" of the settings repository.
+# Use this to declare which configurations to load for a given session.
+# The config-retriever skill can help you discover and select configurations.
+
+# ============================================
+# AVAILABLE PLATFORMS
+# ============================================
+# - antigravity: Skills, rules, workflows for Google Antigravity agent
+# - gemini-cli:  GEMINI.md configs for Gemini CLI
+# - general:     Platform-agnostic workflows and resources
+
+# ============================================
+# ACTIVE CONFIGURATIONS
+# ============================================
+# Uncomment or add paths to load specific configurations.
+# Use relative paths from this repo root.
+
+## Antigravity
+# @include antigravity/rules/RULES_TEMPLATE.md
+# @include antigravity/skills/SKILL_TEMPLATE.md
+# @include antigravity/workflows/WORKFLOW_TEMPLATE.md
+
+## Gemini CLI
+# @include gemini-cli/config/GEMINI_TEMPLATE.md
+
+## General
+# @include general/workflows/WORKFLOW_TEMPLATE.md
+
+# ============================================
+# HOW TO USE
+# ============================================
+# 1. Run the config-retriever skill to browse available configs.
+# 2. Copy the path of the config you need.
+# 3. Uncomment or add the @include line above.
+# 4. Your AI agent will load these on startup.
+
+# ============================================
+# QUICK REFERENCE
+# ============================================
+# List all available configs:
+#   Ask: "List all available configurations in this repo"
+#
+# Search for a specific topic:
+#   Ask: "Find configs related to Python coding standards"
+#
+# Load a config:
+#   Ask: "Add the Antigravity rules template to my active configurations"
