@@ -24,27 +24,61 @@ For each module, clarify if they want a **Global Configuration** (active in `tem
 3.  **Gemini CLI Settings**:
     - **Global**: Download files + add `@include` to `template.txt`.
     - **Local**: Download files only.
-4.  **Full Suite (Global)**: Install and activate everything.
+4.  **Antigravity Templates**: Custom rules, skills, and workflows.
+5.  **Full Suite (Global)**: Install and activate everything.
 
-### 3. Execution Logic
-Once selection is made, download files from: `https://github.com/Legesus/custom-instruct`.
+---
+
+### 3. Structural Setup Guide (Final Implementation)
+
+After the user makes their selection, use the following logic to organize the project:
+
+#### A. Core Orchestration (.agent/)
+- **Dir**: Create `.agent/skills/config-retriever/` at the ROOT.
+- **Action**: Fetch `SKILL.md` and place it in that folder.
+- **README**: Ensure the root `README.md` structure reflects the `/.agent` folder as the **Main Agent Folder**.
+
+#### B. Antigravity Platform (antigravity/)
+- **Dir**: Use `antigravity/` as the platform root.
+- **Superpowers**: Nest the module at `antigravity/superpowers/.agent/`.
+- **Templates**: Ensure `rules/`, `skills/`, and `workflows/` folders are present under `antigravity/`.
+
+#### C. Manifest Configuration (template.txt)
+- **Check**: If `template.txt` does not exist, create it at the ROOT.
+- **Global Setup**: For every "Global" selection, add an `@include` line pointing to the absolute/relative path of the main configuration file (e.g., `superpowers.md` or `GEMINI.md`).
+- **Organization**: Group `@include` lines by platform (e.g., `## Antigravity`, `## Gemini CLI`).
+
+---
+
+### 4. Execution Logic (Source Mapping)
+Download files from the following paths at: `https://raw.githubusercontent.com/Legesus/custom-instruct/main/`
 
 #### A. Config Retriever (Main Agent)
-- Create directory `.agent/skills/config-retriever/`
-- Download `SKILL.md` to that folder.
-- **Always update `README.md`** to include the `/.agent` structure.
+- Path: [SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/.agent/skills/config-retriever/SKILL.md)
+- Target: `.agent/skills/config-retriever/SKILL.md`
 
 #### B. Superpowers Module
-- Create directory `antigravity/superpowers/.agent/`
-- Download `rules/`, `skills/`, and `workflows/` contents.
-- **If Global**: Update `template.txt` with Superpowers `@include` lines.
+- **Rules**: [superpowers.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/rules/superpowers.md)
+- **Skills (Examples)**:
+    - [brainstorm/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/skills/superpowers-brainstorm/SKILL.md)
+    - [plan/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/skills/superpowers-plan/SKILL.md)
+    - [tdd/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/skills/superpowers-tdd/SKILL.md)
+- **Workflows (Examples)**:
+    - [execute-plan.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/workflows/superpowers-execute-plan.md)
+    - [write-plan.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/workflows/superpowers-write-plan.md)
 
-#### C. Gemini CLI Settings
-- Create directory `gemini-cli/config/`
-- Download `GEMINI.md` (or relevant templates).
-- **If Global**: Update `template.txt` with Gemini CLI `@include` lines.
+#### C. Antigravity Core
+- [RULES_TEMPLATE.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/rules/RULES_TEMPLATE.md)
+- [SKILL_TEMPLATE.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/skills/SKILL_TEMPLATE.md)
+- [writethisdown.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/workflows/writethisdown.md)
 
-#### D. Finalization
+#### D. Gemini CLI & General
+- [GEMINI_TEMPLATE.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/gemini-cli/config/GEMINI_TEMPLATE.md)
+- [devcontainer.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/general/uncategorized/devcontainer.md)
+
+---
+
+### 5. Finalization
 - Update `template.txt` at the root if any "Global" options were selected.
 - Provide a summary of installed components and their configuration status (Global vs Local).
 - Offer to run a "Health Check" by listing the files.
