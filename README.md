@@ -11,7 +11,9 @@ This repository centralizes configurations for AI agents, CLI tools, and general
 
 ## How to Initialize
 To quickly set up this repository in a new environment:
-1.  **Download Installer**: `curl -L -o INSTALLER.md https://raw.githubusercontent.com/Legesus/custom-instruct/main/INSTALLER.md`
+1.  **Download Installer**:
+    - **Terminal (Bash/Zsh)**: `curl -L -o INSTALLER.md https://raw.githubusercontent.com/Legesus/custom-instruct/main/INSTALLER.md`
+    - **PowerShell**: `Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Legesus/custom-instruct/main/INSTALLER.md" -OutFile "INSTALLER.md"`
 2.  **Bootstrap**: Tell your AI agent: *"Follow the instructions in INSTALLER.md to set up my environment."*
 
 ## How to use the template

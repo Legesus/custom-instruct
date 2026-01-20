@@ -53,10 +53,16 @@ Once selection is made, download files from: `https://github.com/Legesus/custom-
 
 ## 🛠️ Usage for Humans
 
-To bootstrap a new environment with these settings, run the following command in your terminal:
+To bootstrap a new environment with these settings, run one of the following commands in your terminal:
 
+**Terminal (Bash/Zsh)**:
 ```bash
 curl -L -o INSTALLER.md https://raw.githubusercontent.com/Legesus/custom-instruct/main/INSTALLER.md
+```
+
+**PowerShell**:
+```powershell
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Legesus/custom-instruct/main/INSTALLER.md" -OutFile "INSTALLER.md"
 ```
 
 Then, point your AI assistant to this file and say: **"Follow the instructions in INSTALLER.md to set up my environment."**
