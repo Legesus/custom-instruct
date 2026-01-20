@@ -73,6 +73,7 @@ Download files from the following paths at: `https://raw.githubusercontent.com/L
 - [skill-writer/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/skills/skill-writer/SKILL.md)
 - [code-simplifier/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/skills/code-simplifier/SKILL.md)
 - [writethisdown.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/workflows/writethisdown.md)
+- [pentester-research/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/skills/pentester-research/SKILL.md)
 
 #### D. Gemini CLI & General
 - [GEMINI_TEMPLATE.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/gemini-cli/config/GEMINI_TEMPLATE.md)
