@@ -11,6 +11,7 @@
 # - antigravity: Skills, rules, workflows for Google Antigravity agent
 # - gemini-cli:  GEMINI.md configs for Gemini CLI
 # - general:     Platform-agnostic workflows and resources
+# - superpowers:  Disciplined workflow skills and rules
 
 # ============================================
 # ACTIVE CONFIGURATIONS
@@ -28,6 +29,11 @@
 
 ## General
 # @include general/workflows/WORKFLOW_TEMPLATE.md
+
+## Superpowers
+# @include antigravity/superpowers/.agent/rules/superpowers.md
+# @include antigravity/superpowers/.agent/skills/SKILL_NAME/SKILL.md
+# @include antigravity/superpowers/.agent/workflows/WORKFLOW_NAME.md
 
 # ============================================
 # HOW TO USE

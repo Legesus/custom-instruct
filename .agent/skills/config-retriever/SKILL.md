@@ -20,6 +20,9 @@ This skill helps you navigate and manage configurations in your central settings
 ## Repository Structure
 ```
 /settings-repo
+├── .agent/                   # Main Agent Folder (Orchestration)
+│   └── skills/
+│       └── config-retriever/
 ├── template.txt              # The "Brain" - central manifest
 ├── general/                  # Platform-agnostic settings
 │   ├── workflows/
@@ -27,7 +30,8 @@ This skill helps you navigate and manage configurations in your central settings
 ├── antigravity/              # Antigravity-specific
 │   ├── rules/
 │   ├── skills/
-│   └── workflows/
+│   ├── workflows/
+│   └── superpowers/          # Superpowers module
 └── gemini-cli/               # Gemini CLI specific
     └── config/
 ```
