@@ -6,7 +6,7 @@ This repository centralizes configurations for AI agents, CLI tools, and general
 
 - `/.agent`: **Main Agent Folder**. Contains core skills like the `config-retriever` for repository orchestration.
 - `/general`: Platform-agnostic rules, workflows, and uncategorized docs.
-- `/antigravity`: Skills and workflows specifically for the Antigravity agent (including the `superpowers` module and the `skill-writer` meta-skill).
+- `/antigravity`: Skills and workflows specifically for the Antigravity agent (including the `superpowers` module, `skill-writer`, and `code-simplifier` skills).
 - `/gemini-cli`: Configurations and documentation for the Gemini CLI.
 
 ## How to Initialize

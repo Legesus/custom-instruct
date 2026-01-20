@@ -23,6 +23,7 @@
 # @include antigravity/rules/RULES_TEMPLATE.md
 # @include antigravity/skills/SKILL_TEMPLATE.md
 # @include antigravity/skills/skill-writer/SKILL.md
+# @include antigravity/skills/code-simplifier/SKILL.md
 # @include antigravity/workflows/WORKFLOW_TEMPLATE.md
 
 ## Gemini CLI
