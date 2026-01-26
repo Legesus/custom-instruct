@@ -24,7 +24,7 @@ For each module, clarify if they want a **Global Configuration** (active in `tem
 3.  **Gemini CLI Settings**:
     - **Global**: Download files + add `@include` to `template.txt`.
     - **Local**: Download files only.
-4.  **Antigravity Templates**: Custom rules, skills (including **Skill Writer** and **Code Simplifier**), and workflows.
+4.  **Antigravity Templates**: Custom rules, skills (including **Skill Writer**, **Code Simplifier**, and **Library Checker**), and workflows.
 5.  **Full Suite (Global)**: Install and activate everything.
 
 ---
@@ -74,6 +74,7 @@ Download files from the following paths at: `https://raw.githubusercontent.com/L
 - [code-simplifier/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/skills/code-simplifier/SKILL.md)
 - [writethisdown.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/workflows/writethisdown.md)
 - [pentester-research/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/skills/pentester-research/SKILL.md)
+- [library-checker/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/skills/library-checker/SKILL.md)
 
 #### D. Gemini CLI & General
 - [GEMINI_TEMPLATE.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/gemini-cli/config/GEMINI_TEMPLATE.md)
