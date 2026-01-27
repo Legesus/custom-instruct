@@ -24,7 +24,7 @@ For each module, clarify if they want a **Global Configuration** (active in `tem
 3.  **Gemini CLI Settings**:
     - **Global**: Download files + add `@include` to `template.txt`.
     - **Local**: Download files only.
-4.  **Antigravity Templates**: Custom rules, skills (including **Skill Writer**, **Code Simplifier**, and **Library Checker**), and workflows.
+4.  **Antigravity Templates**: Custom rules, skills (including **Skill Writer**, **Code Simplifier**, **Library Checker**, **Frontend Design**, and **Tool Calling Implementer**), and workflows.
 5.  **Full Suite (Global)**: Install and activate everything.
 
 ---
@@ -59,22 +59,40 @@ Download files from the following paths at: `https://raw.githubusercontent.com/L
 
 #### B. Superpowers Module
 - **Rules**: [superpowers.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/rules/superpowers.md)
-- **Skills (Examples)**:
-    - [brainstorm/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/skills/superpowers-brainstorm/SKILL.md)
-    - [plan/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/skills/superpowers-plan/SKILL.md)
-    - [tdd/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/skills/superpowers-tdd/SKILL.md)
-- **Workflows (Examples)**:
-    - [execute-plan.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/workflows/superpowers-execute-plan.md)
-    - [write-plan.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/workflows/superpowers-write-plan.md)
+- **Skills**:
+    - [superpowers-brainstorm/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/skills/superpowers-brainstorm/SKILL.md)
+    - [superpowers-plan/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/skills/superpowers-plan/SKILL.md)
+    - [superpowers-tdd/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/skills/superpowers-tdd/SKILL.md)
+    - [superpowers-review/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/skills/superpowers-review/SKILL.md)
+    - [superpowers-debug/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/skills/superpowers-debug/SKILL.md)
+    - [superpowers-finish/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/skills/superpowers-finish/SKILL.md)
+    - [superpowers-python-automation/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/skills/superpowers-python-automation/SKILL.md)
+    - [superpowers-rest-automation/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/skills/superpowers-rest-automation/SKILL.md)
+    - [superpowers-workflow/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/skills/superpowers-workflow/SKILL.md)
+- **Workflows**:
+    - [superpowers-brainstorm.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/workflows/superpowers-brainstorm.md)
+    - [superpowers-execute-plan.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/workflows/superpowers-execute-plan.md)
+    - [superpowers-execute-plan-parallel.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/workflows/superpowers-execute-plan-parallel.md)
+    - [superpowers-write-plan.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/workflows/superpowers-write-plan.md)
+    - [superpowers-debug.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/workflows/superpowers-debug.md)
+    - [superpowers-finish.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/workflows/superpowers-finish.md)
+    - [superpowers-reload.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/workflows/superpowers-reload.md)
+    - [superpowers-review.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/workflows/superpowers-review.md)
 
 #### C. Antigravity Core
-- [RULES_TEMPLATE.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/rules/RULES_TEMPLATE.md)
-- [SKILL_TEMPLATE.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/skills/SKILL_TEMPLATE.md)
-- [skill-writer/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/skills/skill-writer/SKILL.md)
-- [code-simplifier/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/skills/code-simplifier/SKILL.md)
-- [writethisdown.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/workflows/writethisdown.md)
-- [pentester-research/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/skills/pentester-research/SKILL.md)
-- [library-checker/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/skills/library-checker/SKILL.md)
+- **Templates**:
+    - [RULES_TEMPLATE.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/rules/RULES_TEMPLATE.md)
+    - [SKILL_TEMPLATE.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/skills/SKILL_TEMPLATE.md)
+    - [WORKFLOW_TEMPLATE.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/workflows/WORKFLOW_TEMPLATE.md)
+- **Skills**:
+    - [skill-writer/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/skills/skill-writer/SKILL.md)
+    - [code-simplifier/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/skills/code-simplifier/SKILL.md)
+    - [pentester-research/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/skills/pentester-research/SKILL.md)
+    - [library-checker/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/skills/library-checker/SKILL.md)
+    - [frontend-design/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/skills/frontend-design/SKILL.md)
+    - [tool-calling-implementer/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/skills/tool-calling-implementer/SKILL.md)
+- **Workflows**:
+    - [writethisdown.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/workflows/writethisdown.md)
 
 #### D. Gemini CLI & General
 - [GEMINI_TEMPLATE.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/gemini-cli/config/GEMINI_TEMPLATE.md)
