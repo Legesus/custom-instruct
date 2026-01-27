@@ -54,7 +54,7 @@ Example: "Find configs related to Python" or "Find configs for workflows"
 Ask the agent:
 > "Show me the contents of [path]"
 
-Example: "Show me the contents of antigravity/rules/RULES_TEMPLATE.md"
+Example: "Show me the contents of antigravity/rules/RULES_TEMPLATE.md" or "antigravity/rules/browser-control.md"
 
 ### 4. Add to Active Configurations
 Ask the agent:

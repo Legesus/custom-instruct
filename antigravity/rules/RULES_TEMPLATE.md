@@ -15,6 +15,7 @@
 - DO NOT modify `.env` or `secrets.yaml` files.
 - Always run tests before committing.
 - Prefer async/await patterns for I/O-bound operations.
+- ALWAYS use `browser_subagent` for browser automation (see `antigravity/rules/browser-control.md`).
 
 ## Error Handling
 - If you encounter the same error more than 2 times, STOP and search the web.

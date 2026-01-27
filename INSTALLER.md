@@ -24,7 +24,7 @@ For each module, clarify if they want a **Global Configuration** (active in `tem
 3.  **Gemini CLI Settings**:
     - **Global**: Download files + add `@include` to `template.txt`.
     - **Local**: Download files only.
-4.  **Antigravity Templates**: Custom rules, skills (including **Skill Writer**, **Code Simplifier**, **Library Checker**, **Frontend Design**, and **Tool Calling Implementer**), and workflows.
+4.  **Antigravity Templates**: Custom rules, skills (including **Skill Writer**, **Code Simplifier**, **Library Checker**, **Frontend Design**, **Tool Calling Implementer**, and **Browser Control**), and workflows.
 5.  **Full Suite (Global)**: Install and activate everything.
 
 ---
@@ -80,8 +80,10 @@ Download files from the following paths at: `https://raw.githubusercontent.com/L
     - [superpowers-review.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/superpowers/.agent/workflows/superpowers-review.md)
 
 #### C. Antigravity Core
-- **Templates**:
+- **Rules**:
     - [RULES_TEMPLATE.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/rules/RULES_TEMPLATE.md)
+    - [browser-control.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/rules/browser-control.md)
+- **Templates**:
     - [SKILL_TEMPLATE.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/skills/SKILL_TEMPLATE.md)
     - [WORKFLOW_TEMPLATE.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/workflows/WORKFLOW_TEMPLATE.md)
 - **Skills**:
@@ -91,6 +93,7 @@ Download files from the following paths at: `https://raw.githubusercontent.com/L
     - [library-checker/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/skills/library-checker/SKILL.md)
     - [frontend-design/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/skills/frontend-design/SKILL.md)
     - [tool-calling-implementer/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/skills/tool-calling-implementer/SKILL.md)
+    - [browser-control/SKILL.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/skills/browser-control/SKILL.md)
 - **Workflows**:
     - [writethisdown.md](https://raw.githubusercontent.com/Legesus/custom-instruct/main/antigravity/workflows/writethisdown.md)
 

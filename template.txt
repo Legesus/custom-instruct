@@ -28,6 +28,8 @@
 # @include antigravity/skills/library-checker/SKILL.md
 # @include antigravity/skills/frontend-design/SKILL.md
 # @include antigravity/skills/tool-calling-implementer/SKILL.md
+# @include antigravity/rules/browser-control.md
+# @include antigravity/skills/browser-control/SKILL.md
 # @include antigravity/workflows/WORKFLOW_TEMPLATE.md
 
 ## Gemini CLI
