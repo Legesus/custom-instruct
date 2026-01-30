@@ -34,13 +34,15 @@ For each module, clarify if they want a **Global Configuration** (active in `tem
 
 #### Options:
 1.  **Superpowers (Antigravity)**:
-    - **Global**: Download files + add `@include` to `template.txt`.
-    - **Local**: Download files only.
+    - **Global**: Download to `~/.gemini/antigravity/global_skills/` + add `@include` to `template.txt`.
+    - **Local**: Download to `antigravity/superpowers/` only.
 2.  **Gemini CLI Settings**:
-    - **Global**: Download files + add `@include` to `template.txt`.
-    - **Local**: Download files only.
+    - **Global**: Download to `~/.gemini/antigravity/global_skills/` + add `@include` to `template.txt`.
+    - **Local**: Download to `gemini-cli/` only.
 3.  **Antigravity Templates**: Custom rules, skills (including **Skill Writer**, **Code Simplifier**, **Library Checker**, **Frontend Design**, **Tool Calling Implementer**, and **Browser Control**), and workflows.
-4.  **Full Suite (Global)**: Install and activate everything.
+    - **Global**: Download to `~/.gemini/antigravity/global_skills/`.
+    - **Local**: Download to `./antigravity/`.
+4.  **Full Suite (Global)**: Install everything to global paths and activate.
 
 ---
 
@@ -58,8 +60,11 @@ After the user makes their selection, use the following logic to organize the pr
 - **Templates**: Ensure `rules/`, `skills/`, and `workflows/` folders are present under `antigravity/`.
 
 #### C. Manifest Configuration (template.txt)
-- **Check**: If `template.txt` does not exist, create it at the ROOT.
-- **Global Setup**: For every "Global" selection, add an `@include` line pointing to the absolute/relative path of the main configuration file (e.g., `superpowers.md` or `GEMINI.md`).
+- **Check**: If `template.txt` does not exist, create it at the ROOT of the workspace.
+- **Scope Handling**: 
+    - **Local**: Point to relative path (e.g., `./antigravity/...`).
+    - **Global**: Point to absolute path in `~/.gemini/antigravity/global_skills/...`.
+- **Global Setup**: For every "Global" selection, add an `@include` line pointing to the correct path.
 - **Organization**: Group `@include` lines by platform (e.g., `## Antigravity`, `## Gemini CLI`).
 
 ---

@@ -19,21 +19,18 @@ This skill helps you navigate and manage configurations in your central settings
 
 ## Repository Structure
 ```
-/settings-repo
-├── .agent/                   # Main Agent Folder (Orchestration)
-│   └── skills/
-│       └── config-retriever/
-├── template.txt              # The "Brain" - central manifest
-├── general/                  # Platform-agnostic settings
-│   ├── workflows/
-│   └── uncategorized/
-├── antigravity/              # Antigravity-specific
-│   ├── rules/
-│   ├── skills/
-│   ├── workflows/
-│   └── superpowers/          # Superpowers module
-└── gemini-cli/               # Gemini CLI specific
-    └── config/
+[Local Workspace]
+├── .agent/skills/            # Local Skills Folder
+│   └── config-retriever/     # This Skill (Local)
+├── template.txt              # The "Brain" (Local)
+├── general/                  # Shared settings
+├── antigravity/              # Antigravity modules
+└── gemini-cli/               # CLI settings
+
+[Global Scope]
+~/.gemini/antigravity/
+└── global_skills/            # Global Skills Folder
+    └── config-retriever/     # This Skill (Global)
 ```
 
 ## Usage Instructions
@@ -42,7 +39,7 @@ This skill helps you navigate and manage configurations in your central settings
 Ask the agent:
 > "List all available configurations in this repo"
 
-The agent will scan all folders and return a categorized list.
+The agent will scan both **Local** and **Global** folders and return a categorized list.
 
 ### 2. Search for Specific Configs
 Ask the agent:
@@ -90,7 +87,10 @@ Agent: Searches for matching files, presents options, adds selected ones
 
 ## Notes
 - The Brain (template.txt) uses `@include` syntax for compatibility with Gemini CLI.
-- Configurations are loaded hierarchically - more specific overrides general.
+- Configurations follow Antigravity standards for scope:
+    - **Local**: `<workspace-root>/.agent/skills/`
+    - **Global**: `~/.gemini/antigravity/global_skills/`
+- Configurations are loaded hierarchically - more specific (Local) overrides shared (Global).
 - Use `/memory refresh` in Gemini CLI after updating template.txt.
 
 ## Related Skills
